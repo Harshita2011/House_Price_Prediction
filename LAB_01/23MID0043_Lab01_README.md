@@ -22,23 +22,29 @@ The objective is to develop a reproducible, leakage-safe pipeline, establish tra
 ## 2. Repository Structure
 
 ```
-D:/Adv Predictive Lab/
-├── 23MID0043_Lab01_Ames_Housing.ipynb          # Ames Housing analysis notebook
-├── 23MID0043_Lab01_California.ipynb            # California Housing analysis notebook
-├── 23MID0043_Lab01_UCI_RealEstate.ipynb        # UCI Real Estate analysis notebook
-├── 23MID0043_Lab01_README.md                   # This file
-├── 23MID0043_Lab01_Report.pdf                  # Industry-style technical report
-├── train.csv                                   # Ames Housing raw training data
-├── ames_model_comparison.csv                   # Ames test-set model comparison
-├── ames_cross_validation.csv                   # Ames 5-fold CV results
-├── ames_house_price_pipeline.joblib            # Final Ames pipeline artifact
-├── California_model_comparison.csv             # California test-set model comparison
-├── California_cross_validation_results.csv     # California 5-fold CV results
-├── California_house_price_pipeline.joblib      # Final California pipeline artifact
-├── uci_model_comparison.csv                    # UCI test-set model comparison
-├── uci_cross_validation.csv                    # UCI 5-fold CV results
-├── uci_real_estate_model.joblib                # Final UCI pipeline artifact
-└── run_metadata.json                           # Run metadata (seed, sizes, selected model)
+Advanced_Predictive_Analytics_LAB/
+└── LAB_01/
+    ├── 23MID0043_Lab01_Ames_Housing.ipynb          # Ames Housing analysis notebook
+    ├── 23MID0043_Lab01_California.ipynb            # California Housing analysis notebook
+    ├── 23MID0043_Lab01_UCI_RealEstate.ipynb        # UCI Real Estate analysis notebook
+    ├── 23MID0043_Lab01_Ames_Housing.py             # Ames Housing script (generated from notebook)
+    ├── 23MID0043_Lab01_California.py               # California Housing script (generated from notebook)
+    ├── 23MID0043_Lab01_UCI_RealEstate.py           # UCI Real Estate script (generated from notebook)
+    ├── 23MID0043_Lab01_README.md                   # This file
+    ├── 23MID0043_Lab01_Report.pdf                  # Industry-style technical report
+    ├── requirements.txt                            # Python package dependencies
+    ├── execute_notebooks.py                        # Notebook runner script
+    ├── train.csv                                   # Ames Housing raw training data
+    ├── ames_model_comparison.csv                   # Ames test-set model comparison
+    ├── ames_cross_validation.csv                   # Ames 5-fold CV results
+    ├── ames_house_price_pipeline.joblib            # Final Ames pipeline artifact
+    ├── California_model_comparison.csv             # California test-set model comparison
+    ├── California_cross_validation_results.csv     # California 5-fold CV results
+    ├── California_house_price_pipeline.joblib      # Final California pipeline artifact
+    ├── uci_model_comparison.csv                    # UCI test-set model comparison
+    ├── uci_cross_validation.csv                    # UCI 5-fold CV results
+    ├── uci_real_estate_model.joblib                # Final UCI pipeline artifact
+    └── run_metadata.json                           # Run metadata (seed, sizes, selected model)
 ```
 
 ---
@@ -56,7 +62,13 @@ D:/Adv Predictive Lab/
   - `ucimlrepo`
   - `statsmodels`
 
-Install missing dependencies with:
+Install dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
+Or install manually:
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn joblib ucimlrepo statsmodels
